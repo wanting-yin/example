@@ -1,0 +1,169 @@
+﻿<!DOCTYPE html>
+<meta charset="utf-8">
+<html>
+<head>
+  <title>Dashboard</title>
+  <link rel="stylesheet" href="bootstrap.min.css">
+  <link rel="stylesheet" href="keen-dashboards.css">
+  <link rel="stylesheet" href="dc.css">
+  <link rel="stylesheet" href="custom.css">
+
+
+</head>
+<body class="application">
+
+  <div class="navbar navbar-inverse navbar-fixed-top" role="navigation">
+    <div class="container-fluid">
+      <div class="navbar-header">
+        <a class="navbar-brand" href="./">HMDA Dashboard - County Level</a>
+      </div>
+    </div>
+  </div>
+
+  <div class="container-fluid">
+
+    <div class="row">
+
+      <div class="col-sm-6">
+        <div class="row">
+
+          <!-- Time Chart --> 
+          <div class="col-sm-12">
+            <div class="chart-wrapper">
+              <div class="chart-title">
+                Number of HMDA Applications
+              </div>
+              <div class="chart-stage">
+                <div id="time-chart"></div>
+              </div>
+            </div>
+          </div>
+          <!-- Time Chart --> 
+
+                <!-- preappoval Pie -->
+                <div class="col-sm-6">
+                    <div class="chart-wrapper">
+                        <div class="chart-title">
+                            Preapproval Type
+                        </div>
+                        <div class="chart-stage">
+                            <div id="preappoval-level-row-chart"></div>
+                        </div>
+                    </div>
+                </div>
+                <!-- preappoval Pie -->
+                <!-- action Pie -->
+                <div class="col-sm-6">
+                    <div class="chart-wrapper">
+                        <div class="chart-title">
+                            Action Type
+                        </div>
+                        <div class="chart-stage">
+                            <div id="action-type-row-chart"></div>
+                        </div>
+                    </div>
+                </div>
+                <!-- action Pie -->
+                <!-- property Pie -->
+                <div class="col-sm-6">
+                    <div class="chart-wrapper">
+                        <div class="chart-title">
+                            Property Type
+                        </div>
+                        <div class="chart-stage">
+                            <div id="property-type-row-chart"></div>
+                        </div>
+                    </div>
+                </div>
+                <!-- property Pie -->
+                <!-- occupancy Pie -->
+                <div class="col-sm-6">
+                    <div class="chart-wrapper">
+                        <div class="chart-title">
+                            Occupancy
+                        </div>
+                        <div class="chart-stage">
+                            <div id="occupancy-type-row-chart"></div>
+                        </div>
+                    </div>
+                </div>
+                <!--occupancy Pie -->
+
+            </div>
+      </div>
+
+	  <!-- fips Pie -->
+      <div class="col-sm-6">
+        <div class="chart-wrapper">
+          <div class="chart-title">
+            FIPS
+          </div>
+          <div class="chart-stage">
+            <div id="fips-row-chart"></div>
+          </div>
+        </div>
+      </div>
+      <!-- fips Pie -->
+          <!-- loans Pie -->
+
+      <!-- Metric 1 -->
+      <div class="col-sm-3">
+        <div class="chart-wrapper">
+          <div class="chart-title">
+            Total Number of Applications
+          </div>
+          <div class="chart-stage">
+            <div id="total-records-nd"></div>
+          </div>
+        </div>
+      </div>
+      <!-- Metric 1 -->
+
+
+      <!-- Metric 2 -->
+      <div class="col-sm-3">
+        <div class="chart-wrapper">
+          <div class="chart-title">
+            Total Records in USD
+          </div>
+          <div class="chart-stage">
+            <div id="total-counts-nd"></div>
+          </div>
+        </div>
+      </div>
+      <!-- Metric 2 -->
+          <div class="col-sm-6">
+            <div class="chart-wrapper">
+              <div class="chart-title">
+                Loan Type
+              </div>
+              <div class="chart-stage">
+                <div id="loan-type-row-chart"></div>
+              </div>
+            </div>
+          </div>
+          <!-- loans Pie -->
+
+    </div>
+
+  </div>
+    
+    
+    <!-- Time Chart -->
+
+    <hr>
+    <p class="small text-muted">Built by Wanting Yin</p>
+
+
+  <script type="text/javascript" src="jquery.min.js"></script>
+  <script type="text/javascript" src="bootstrap.min.js"></script>
+  <script type="text/javascript" src="crossfilter.js"></script>
+  <script type="text/javascript" src="d3.js" charset="utf-8"></script>
+  <script type="text/javascript" src="dc.js"></script>
+  <script type="text/javascript" src="queue.js"></script>
+
+
+  <script src="keen.min.js"></script>
+  <script src='graphs.js' type='text/javascript'></script>
+</body>
+</html>
